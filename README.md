@@ -1,7 +1,7 @@
 AQSTwitterActivity
 ==================
 
-![](http://img.shields.io/cocoapods/v/AQSTwitterActivity.svg?style=flat)
+![](http://img.shields.io/cocoapods/v/AQSTwitterActivity.svg?style=flat) [![Build Status](https://travis-ci.org/AquaSupport/AQSTwitterActivity.svg?branch=master)](https://travis-ci.org/AquaSupport/AQSTwitterActivity)
 
 [iOS] UIActivity subclass for Twitter that shows even if the user is not logged in.
 
