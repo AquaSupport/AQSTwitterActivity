@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF9EBBEBEE33F06EB6CD02DF /* libPods-AQSTwitterActivityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DD760E7C739E5FF8631256 /* libPods-AQSTwitterActivityTests.a */; };
 		D43F2FF31A0D91E200AA458F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F2FF21A0D91E200AA458F /* main.m */; };
 		D43F2FF61A0D91E200AA458F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F2FF51A0D91E200AA458F /* AppDelegate.m */; };
 		D43F2FF91A0D91E200AA458F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D43F2FF81A0D91E200AA458F /* ViewController.m */; };
@@ -29,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		474D30290C56998F68CEC3C1 /* Pods-AQSTwitterActivityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQSTwitterActivityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AQSTwitterActivityTests/Pods-AQSTwitterActivityTests.release.xcconfig"; sourceTree = "<group>"; };
+		572EC9F9FF6953437616A215 /* Pods-AQSTwitterActivityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQSTwitterActivityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AQSTwitterActivityTests/Pods-AQSTwitterActivityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59DD760E7C739E5FF8631256 /* libPods-AQSTwitterActivityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AQSTwitterActivityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43F2FED1A0D91E200AA458F /* AQSTwitterActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AQSTwitterActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43F2FF11A0D91E200AA458F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D43F2FF21A0D91E200AA458F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,18 +63,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9EBBEBEE33F06EB6CD02DF /* libPods-AQSTwitterActivityTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74A67D5D0BA250682E34C1C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				572EC9F9FF6953437616A215 /* Pods-AQSTwitterActivityTests.debug.xcconfig */,
+				474D30290C56998F68CEC3C1 /* Pods-AQSTwitterActivityTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D43F2FE41A0D91E200AA458F = {
 			isa = PBXGroup;
 			children = (
 				D43F2FEF1A0D91E200AA458F /* AQSTwitterActivity */,
 				D43F30091A0D91E300AA458F /* AQSTwitterActivityTests */,
 				D43F2FEE1A0D91E200AA458F /* Products */,
+				74A67D5D0BA250682E34C1C1 /* Pods */,
+				EEA197B561A3C5C83D66009A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +151,14 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		EEA197B561A3C5C83D66009A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DD760E7C739E5FF8631256 /* libPods-AQSTwitterActivityTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D43F30131A0D91E300AA458F /* Build configuration list for PBXNativeTarget "AQSTwitterActivityTests" */;
 			buildPhases = (
+				C65612A9F2C8FE348C34588D /* Check Pods Manifest.lock */,
 				D43F30021A0D91E300AA458F /* Sources */,
 				D43F30031A0D91E300AA458F /* Frameworks */,
 				D43F30041A0D91E300AA458F /* Resources */,
+				04D1F0218872ECC709886DB9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +256,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04D1F0218872ECC709886DB9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AQSTwitterActivityTests/Pods-AQSTwitterActivityTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C65612A9F2C8FE348C34588D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D43F2FE91A0D91E200AA458F /* Sources */ = {
@@ -381,6 +440,7 @@
 		};
 		D43F30141A0D91E300AA458F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572EC9F9FF6953437616A215 /* Pods-AQSTwitterActivityTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -400,6 +460,7 @@
 		};
 		D43F30151A0D91E300AA458F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 474D30290C56998F68CEC3C1 /* Pods-AQSTwitterActivityTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -432,6 +493,7 @@
 				D43F30121A0D91E300AA458F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D43F30131A0D91E300AA458F /* Build configuration list for PBXNativeTarget "AQSTwitterActivityTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +502,7 @@
 				D43F30151A0D91E300AA458F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
