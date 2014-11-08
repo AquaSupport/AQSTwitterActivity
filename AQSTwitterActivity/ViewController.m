@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "AQSTwitterActivity.h"
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    /*
+    [super viewDidAppear:animated];
+    
+    AQSTwitterActivity *activity = [[AQSTwitterActivity alloc] init];
+    NSArray *items = @[@"item", [NSURL URLWithString:@"http://google.com/"]];
+    
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:items applicationActivities:@[activity]];
+    activityViewController.completionHandler = ^(NSString *activityType, BOOL completed) {
+        NSLog(@"%@", activityType);
+        NSLog(@"%d", completed);
+    };
+    
+    [self presentViewController:activityViewController animated:YES completion:NULL];*/
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,0 +1,33 @@
+{
+  "images" : [
+    {
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "filename" : "color_AQSTwitterActivity.png"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "filename" : "color_AQSTwitterActivity@2x.png"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "filename" : "color_AQSTwitterActivity@3x.png"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "filename" : "color_AQSTwitterActivity~ipad.png"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "filename" : "color_AQSTwitterActivity@2x~ipad.png"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
